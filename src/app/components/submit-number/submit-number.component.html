@@ -1,0 +1,17 @@
+
+
+<div class="main" >
+
+    <ng-container *ngIf="result$ | async as result">
+        Output: [{{result }}]
+    </ng-container>
+
+    <div class="panel">
+        <label for="numinput">Enter an integer array in the format: "[x,y,z]".</label>
+        <input [formControl]="numberFormControl" type="string">
+            <span class="error" *ngIf="numberFormControl.hasError('required')" >Empty</span>
+            <span class="error" *ngIf="numberFormControl.hasError('formatMatch') && !numberFormControl.hasError('required')" > Invalid format </span>
+        <button (click)="submitNumber()"  [disabled]="!numberFormControl.valid" class="submitButton">SUBMIT</button>
+    </div>
+
+</div>

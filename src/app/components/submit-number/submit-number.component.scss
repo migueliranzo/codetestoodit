@@ -1,0 +1,25 @@
+.panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton{
+    margin-top: 2rem;
+    border-radius: 25px;
+    background-color: var(--secundary-color);
+    padding: 1rem;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submitButton:disabled{
+    background-color: #dda15ea3;
+}
+
+.error{
+    display: inline;
+    color: red;
+    font-size: 14px;
+}

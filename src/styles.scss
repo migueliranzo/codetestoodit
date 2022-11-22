@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root 
+{
+    --base-color: #FEFAE0;
+    --secundary-color: #DDA15E;
+    --accent-color: #BC6C25; 
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui;
+    background-color: var(--base-color);
+}
+
+.header{
+    background-color: var(--secundary-color);
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.main{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+app-root {
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
